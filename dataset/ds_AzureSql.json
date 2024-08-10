@@ -1,0 +1,44 @@
+{
+	"name": "ds_AzureSql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsAzureSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Customer_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Customer_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Country",
+				"type": "varchar"
+			},
+			{
+				"name": "Start_date",
+				"type": "date"
+			},
+			{
+				"name": "End_date",
+				"type": "date"
+			},
+			{
+				"name": "IsActive",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CUSTOMER_TARGET"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
